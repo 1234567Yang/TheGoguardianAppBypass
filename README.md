@@ -32,10 +32,11 @@ for ($i = 1; $i -le 100; $i++) {
 # Dear Goguardian developer:
 I do not know what did you learned during your university life, but your application has a lot of BUGs.
 If I were you, I would improve these things:
-* For the Javascript injected, save the element changed into an array and use `setTimeout` to avoid lagging (Google translate), and you can also set `var max` to avoid the website continue changing element that you can not detect.
+* For the Javascript injected (`MutationObserver`), save the element changed into an array and use `setTimeout` to avoid lagging (Google translate), and you can also set `var max` to avoid the website continue changing element that you can not detect.
 * I do not know what did you inject to the html body, but it messes up with the element positions a lot, why not just inject `<script>` in the very beginning of the body, as browser will auto parse it correctly.
 * For the front end, using C# is not a good idea, as you need to detect a lot of websites, and C++ is a better idea
 * Also add an Virtual Network Card like Cloudflare Warp, and change the CA of the computer, for those applications which do not follow system proxy rule
   * This also allow you to detect any VPN services(via traffic characteristics. ex. ShadowSocks, Hysteria2), you might want to see https://github.com/apernet/OpenGFW
+* Also screenshot the website and use OCR and other technology to detect the webpage
 
 Hopefully these suggestions will help you fulfill your dictatorial ambitions
