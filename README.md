@@ -2,7 +2,7 @@
 The first solution to bypass "TheGoguardianApp.exe".
 
 # Steps
-## Download a non-chromium kernel browser that can not "be managed by your organization"(ex. Firefox, Arc browser)
+## Download a browser that can not "be managed by your organization"(ex. Firefox, Arc browser)
 * Download the installer
   * If the download is blocked, please use this repository: https://github.com/1234567Yang/cf-proxy-ex
 * Install
@@ -30,7 +30,7 @@ for ($i = 1; $i -le 100; $i++) {
 ```
 
 # Dear Goguardian developer:
-I do not know what did you learned during your university life, but your application has a lot of BUGs.
+I do not know what you learned during your university life, but your application has a lot of BUGs.
 If I were you, I would improve these things:
 * For the Javascript injected (`MutationObserver`), save the element changed into an array and use `setTimeout` to avoid lagging (Google translate), and you can also set `var max` to avoid the website continue changing element that you can not detect.
 * I do not know what did you inject to the html body, but it messes up with the element positions a lot, why not just inject `<script>` in the very beginning of the body, as browser will auto parse it correctly.
