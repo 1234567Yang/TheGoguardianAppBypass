@@ -2,19 +2,16 @@
 The first solution to bypass "TheGoguardianApp.exe".
 
 # Steps
-## Download a browser that can not "be managed by your organization"(ex. Firefox, Arc browser)
+## Download a browser that can not "be managed by your organization"(ex. ~~Firefox~~, Arc browser)
 * Download the installer
   * If the download is blocked, please use this repository: https://github.com/1234567Yang/cf-proxy-ex
 * Install
     * For some browser, the first download is online version, which is blocked as well, so after the install application lead you to a offline version, copy the value of `ctx` parameter from blocked.goguardian.com and decode with base64, this will let you see the original link
     * Use url decode to decode the url if you need to
     * Proxy the offline version link as well and download the browser
+ ### DO NOT OPEN THE BROWSER YET
 
-## Goto browser settings
-* Search "proxy"
-* Change to "do not use the system proxy"
-
-## Run this in powershell
+ ## Run this in powershell
 ```
 for ($i = 1; $i -le 100; $i++) {
     Stop-Process -Name "TheGoguardianApp" -Force
@@ -28,6 +25,12 @@ for ($i = 1; $i -le 100; $i++) {
     Start-Sleep -Seconds 1.5
 }
 ```
+
+
+## Goto browser settings
+* Search "proxy"
+* Change to "do not use the system proxy"
+
 
 # Dear Goguardian developer:
 I do not know what you learned during your university life, but your application has a lot of BUGs.
